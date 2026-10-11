@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://esm.sh/@material/web@2.0.0/all.js"></script>
+    <script defer src="script.js"></script>
+</head>
+<body data-theme="indigo">
+    <div class="app-shell">
+        <header class="top-bar">
+            <div class="top-bar-row">
+                <span class="brand">Hello World</span>
+                <div class="spacer"></div>
+                <md-outlined-select id="themeSelector" label="Theme" onchange="changeTheme()">
+                    <md-select-option value="indigo" selected>Indigo</md-select-option>
+                    <md-select-option value="pink">Pink</md-select-option>
+                    <md-select-option value="blue">Blue</md-select-option>
+                    <md-select-option value="green">Green</md-select-option>
+                    <md-select-option value="red">Red</md-select-option>
+                </md-outlined-select>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <h1 class="hello-world">Hello, World!</h1>
+            <img id="globeImage" src="globe.png" alt="Globe" class="globe-image">
+            <md-filled-button type="button" onclick="toggleImage()">Toggle Image</md-filled-button>
+        </main>
+    </div>
+</body>
+</html>
